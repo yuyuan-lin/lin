@@ -17,7 +17,8 @@ lin_color <- function(...) {
     facui = rgb(red = 016, green = 139, blue = 150, maxColorValue = 255),
     huangbulao = rgb(red = 219, green = 155, blue = 052, maxColorValue = 255),
     luozidai = rgb(red = 19, green = 57, blue = 62, maxColorValue = 255),
-    qingdai = rgb(red = 69, green = 70, blue = 94, maxColorValue = 255)
+    qingdai = rgb(red = 69, green = 70, blue = 94, maxColorValue = 255),
+    ousi = rgb(red = 211, green = 203, blue = 197, maxColorValue = 255)
   )
 
   # output color value according to call

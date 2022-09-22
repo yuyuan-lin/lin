@@ -19,11 +19,12 @@ plot_met_time <- function(tbl, var_met, var_time,
   var_met <- enquo(var_met)
   var_time <- enquo(var_time)
   var_color <- enquo(var_color)
+  time_cutoff <- as.POSIXct(time_cutoff)
 
   tbl %>%
     ggplot(mapping = aes(x = !!var_time, y = !!var_met)) +
     geom_point(mapping = aes(color = !!var_color)) +
-    geom_vline(xintercept = time_cutoff) +
+    geom_vline(xintercept = time_cutoff, linetype = "dashed") +
     theme_bw() +
     labs(x = "Sampling date",
          y = "Metabolite feature intensity") +
